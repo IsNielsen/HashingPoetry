@@ -73,6 +73,7 @@ grep(?) I should be able to read through the file and count how many of each wor
 
 **Important - do not change the code in this phase**
 
+### Updating HashTable to accept 2 generics
 Deliver:
 
 *   [ ] Function signatures that include:
