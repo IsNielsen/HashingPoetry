@@ -85,6 +85,17 @@ Deliver:
 *   Explain what happens in the face of good and bad input.
     *   Write a few specific examples that occur to you, and use them later when testing.
 
+### Building the Hash Table
+public HashTable writePoem(String file) {
+    Create the wordArray of words, with punctuation split
+    Create emptyArray to hold words that have already been checked
+    while(until) emptyArray has 1 of every word in the file:
+        go through wordArray until it finds a currWord thats not in emptyArray
+        Find how many times currWord occurs
+        While doing that check nextWord, and put that in a new array?
+        
+    
+    
 
 ## Phase 2: Implementation
 *(15% of your effort)*

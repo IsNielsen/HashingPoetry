@@ -40,6 +40,23 @@ public class WordFreqInfo {
         return this.occurCount;
     }
 
+    public String getFollowWord(int count) {
+        /*
+        find WordFollowFreq
+        Put possible next in array ( if word has freq of 2, put it in twice)
+        return array[count]
+         */
+        ArrayList<String> result = new ArrayList<>();
+
+        for (Frequency f : followList) {
+            for (int i = 0; i < f.followCount; i++) {
+                result.add(f.follow);
+            }
+        }
+        //System.out.println(num);
+        return result.get(count);
+    }
+
     private class Frequency {
         String follow;
         int followCount;

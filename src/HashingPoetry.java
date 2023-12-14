@@ -1,24 +1,26 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class HashingPoetry {
-    public static void main(String[] args) {
-//        WritePoetry poem = new WritePoetry();
+    public static void main(String[] args) throws FileNotFoundException {
+        WritePoetry poem = new WritePoetry();
+        //poem.writePoem("green.txt", "sam", 30, true);
+        //System.out.println(poem.writePoem("green.txt", "sam", 30, false));
+        System.out.println("--- Sam ---");
+        System.out.println(poem.writePoem("green.txt", "sam", 30, false));
+        System.out.println();
 //
-//        System.out.println("--- Sam ---");
-//        System.out.println(poem.writePoem("green.txt", "sam", 30, false));
-//        System.out.println();
-//
-//        System.out.println("--- Lester ---");
-//        System.out.println(poem.writePoem("lester.txt", "lester", 30, false));
-//        System.out.println();
-//
-//        System.out.println("--- How Many ---");
-//        System.out.println(poem.writePoem("how-many.txt", "how", 50, false));
-//        System.out.println();
+        System.out.println("--- Lester ---");
+        System.out.println(poem.writePoem("lester.txt", "lester", 30, false));
+        System.out.println();
+
+        System.out.println("--- How Many ---");
+        System.out.println(poem.writePoem("how-many.txt", "how", 50, false));
+        System.out.println();
 
 //        testHashTable("zebra.txt");
-        testUpdatedHashTable();
+//        testUpdatedHashTable();
     }
 
     private static void testHashTable(String filename) {
@@ -67,6 +69,12 @@ public class HashingPoetry {
         System.out.printf("The value associated with six is: %d\n", table.find("six"));
 
         System.out.println(table.toString(6));
+    }
+
+    private  static void  testMyHash() {
+        HashTable<String, WordFreqInfo> table = new HashTable<>();
+
+
     }
 
     private static String cleanWord(String word) {
